@@ -1,0 +1,209 @@
+ <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a0938, #4b1b78, #241044);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        table {
+            background-color: #301653;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+            animation: fadeIn 1.2s ease;
+        }
+
+        h1 {
+            color: #e0aaff;
+            font-size: 35px;
+            letter-spacing: 3px;
+            text-shadow: 0 0 12px rgba(224, 170, 255, 0.5);
+        }
+
+        h2 {
+            color: #e0aaff;
+            transition: color 0.3s ease;
+        }
+
+        h2:hover {
+            color: white;
+        }
+
+        p {
+            color: #eee1ff;
+        }
+
+        a {
+            color: #e0aaff;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        a:hover {
+            color: white;
+            text-shadow: 0 0 8px #e0aaff;
+        }
+
+        img {
+            border: 3px solid #e0aaff;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.4s ease,
+                        box-shadow 0.4s ease;
+        }
+
+        img:hover {
+            transform: scale(1.08) rotate(3deg);
+            box-shadow: 0 0 20px #c77dff;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(
+                to right,
+                transparent,
+                #c77dff,
+                transparent
+            );
+            margin: 20px 0;
+        }
+
+        td {
+            padding: 15px;
+        }
+
+        table table {
+            background-color: #3d2061;
+            border-radius: 10px;
+            box-shadow: none;
+        }
+
+        table table td {
+            border-color: #7046a3;
+            transition: background-color 0.3s ease,
+                        color 0.3s ease;
+        }
+
+        table table tr:hover td {
+            background-color: #512b7a;
+            color: #e0aaff;
+        }
+
+
+        ul, ol {
+            padding-left: 35px;
+        }
+
+        li {
+            padding: 5px;
+            transition: color 0.3s ease,
+                        transform 0.3s ease;
+        }
+
+        li:hover {
+            color: #e0aaff;
+            transform: translateX(6px);
+        }
+
+     
+        input {
+            width: 90%;
+            max-width: 350px;
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            background-color: #f8f2ff;
+            color: #241044;
+            outline: none;
+            transition: border-color 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #c77dff;
+            box-shadow: 0 0 10px rgba(199, 125, 255, 0.5);
+        }
+
+        button {
+            background-color: #c77dff;
+            color: #241044;
+            padding: 12px 22px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease,
+                        background-color 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e0aaff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 18px rgba(199, 125, 255, 0.4);
+        }
+
+        button:active {
+            transform: scale(0.96);
+        }
+
+        #result {
+            color: #e0aaff;
+            overflow-wrap: anywhere;
+        }
+
+        address {
+            color: #cdb5e9;
+            font-size: 13px;
+            font-style: normal;
+        }
+
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+      
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 8px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+
+            h2 {
+                font-size: 21px;
+            }
+
+            td {
+                padding: 10px;
+            }
+
+            input {
+                width: 100%;
+            }
+        }
+    </style>
+
